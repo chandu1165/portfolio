@@ -475,6 +475,7 @@ h3 {
   display: grid;
   grid-template-columns: minmax(120px, 0.25fr) minmax(0, 1fr);
   gap: 28px;
+  align-items: start;
   margin-bottom: 48px;
 }
 
