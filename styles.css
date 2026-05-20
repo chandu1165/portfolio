@@ -21,8 +21,8 @@
 
 :root.dark {
   color-scheme: dark;
-  --bg: #091413;
-  --bg-soft: #10231f;
+  --bg: #07110f;
+  --bg-soft: #0e211d;
   --ink: #f1f7f2;
   --muted: #a9bab3;
   --line: rgb(241 247 242 / 0.16);
@@ -50,9 +50,10 @@ body {
   margin: 0;
   background-color: var(--bg);
   background-image:
-    linear-gradient(122deg, color-mix(in srgb, var(--sky) 22%, transparent) 0%, transparent 34%),
-    linear-gradient(245deg, color-mix(in srgb, var(--accent-2) 20%, transparent) 0%, transparent 38%),
-    linear-gradient(180deg, var(--bg-soft) 0%, var(--bg) 34%, color-mix(in srgb, var(--accent-3) 9%, var(--bg)) 100%);
+    linear-gradient(118deg, color-mix(in srgb, var(--sky) 18%, transparent) 0%, transparent 28%),
+    linear-gradient(246deg, color-mix(in srgb, var(--accent-2) 22%, transparent) 0%, transparent 36%),
+    linear-gradient(164deg, transparent 0%, color-mix(in srgb, var(--violet) 9%, transparent) 52%, transparent 82%),
+    linear-gradient(180deg, var(--bg-soft) 0%, var(--bg) 42%, color-mix(in srgb, var(--accent-2) 10%, var(--bg)) 100%);
   background-attachment: fixed;
   color: var(--ink);
   font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
@@ -71,28 +72,29 @@ body::after {
 
 body::before {
   background-image:
-    linear-gradient(rgb(17 32 31 / 0.035) 1px, transparent 1px),
-    linear-gradient(90deg, rgb(17 32 31 / 0.035) 1px, transparent 1px),
-    linear-gradient(132deg, transparent 0 28%, color-mix(in srgb, var(--accent-2) 10%, transparent) 28% 29%, transparent 29% 100%),
-    linear-gradient(38deg, transparent 0 58%, color-mix(in srgb, var(--accent) 7%, transparent) 58% 59%, transparent 59% 100%);
-  background-size: 64px 64px, 64px 64px, 100% 100%, 100% 100%;
-  mask-image: linear-gradient(180deg, black 0%, black 58%, transparent 100%);
+    linear-gradient(rgb(17 32 31 / 0.028) 1px, transparent 1px),
+    linear-gradient(90deg, rgb(17 32 31 / 0.028) 1px, transparent 1px),
+    repeating-linear-gradient(118deg, transparent 0 78px, color-mix(in srgb, var(--accent-2) 8%, transparent) 79px 80px, transparent 81px 160px),
+    repeating-linear-gradient(24deg, transparent 0 112px, color-mix(in srgb, var(--accent) 5%, transparent) 113px 114px, transparent 115px 224px);
+  background-size: 72px 72px, 72px 72px, 100% 100%, 100% 100%;
+  mask-image: linear-gradient(180deg, black 0%, black 72%, transparent 100%);
 }
 
 body::after {
   z-index: -1;
   background:
-    linear-gradient(180deg, color-mix(in srgb, var(--panel-strong) 38%, transparent) 0%, transparent 24%),
-    linear-gradient(90deg, transparent 0%, color-mix(in srgb, var(--accent-2) 12%, transparent) 42%, color-mix(in srgb, var(--violet) 10%, transparent) 64%, transparent 100%);
-  opacity: 0.82;
+    linear-gradient(180deg, color-mix(in srgb, var(--panel-strong) 30%, transparent) 0%, transparent 22%),
+    linear-gradient(90deg, transparent 0%, color-mix(in srgb, var(--accent-2) 16%, transparent) 34%, color-mix(in srgb, var(--sky) 8%, transparent) 52%, color-mix(in srgb, var(--violet) 10%, transparent) 70%, transparent 100%),
+    linear-gradient(0deg, color-mix(in srgb, var(--accent-2) 8%, transparent) 0%, transparent 38%);
+  opacity: 0.9;
 }
 
 :root.dark body::before {
   background-image:
-    linear-gradient(rgb(241 247 242 / 0.055) 1px, transparent 1px),
-    linear-gradient(90deg, rgb(241 247 242 / 0.055) 1px, transparent 1px),
-    linear-gradient(132deg, transparent 0 28%, color-mix(in srgb, var(--accent-2) 12%, transparent) 28% 29%, transparent 29% 100%),
-    linear-gradient(38deg, transparent 0 58%, color-mix(in srgb, var(--accent) 9%, transparent) 58% 59%, transparent 59% 100%);
+    linear-gradient(rgb(241 247 242 / 0.032) 1px, transparent 1px),
+    linear-gradient(90deg, rgb(241 247 242 / 0.032) 1px, transparent 1px),
+    repeating-linear-gradient(118deg, transparent 0 78px, color-mix(in srgb, var(--accent-2) 8%, transparent) 79px 80px, transparent 81px 160px),
+    repeating-linear-gradient(24deg, transparent 0 112px, color-mix(in srgb, var(--accent) 5%, transparent) 113px 114px, transparent 115px 224px);
 }
 
 body.palette-open {
