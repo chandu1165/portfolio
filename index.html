@@ -1,0 +1,352 @@
+<!doctype html>
+<html lang="en" class="dark">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Chandu is a software engineer building polished mobile apps, Flask APIs, and product-focused interfaces.">
+    <title>Chandu | Software Engineer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div class="cursor" aria-hidden="true"></div>
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="Chandu home">CH</a>
+      <nav class="desktop-nav" aria-label="Primary navigation">
+        <a href="#projects">Projects</a>
+        <a href="#process">Process</a>
+        <a href="#skills">Skills</a>
+        <a href="#credentials">Credentials</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <div class="header-actions">
+        <button class="icon-button" id="searchToggle" type="button" aria-label="Open command palette">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m21 21-4.3-4.3M10.8 18a7.2 7.2 0 1 1 0-14.4 7.2 7.2 0 0 1 0 14.4Z"/></svg>
+        </button>
+        <button class="icon-button" id="themeToggle" type="button" aria-label="Toggle dark mode">
+          <svg class="sun" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4V2m0 20v-2m8-8h2M2 12h2m14.4-6.4 1.4-1.4M4.2 19.8l1.4-1.4m0-12.8L4.2 4.2m15.6 15.6-1.4-1.4M12 17a5 5 0 1 0 0-10 5 5 0 0 0 0 10Z"/></svg>
+          <svg class="moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 14.7A8.2 8.2 0 0 1 9.3 3.5 8.7 8.7 0 1 0 20.5 14.7Z"/></svg>
+        </button>
+      </div>
+    </header>
+
+    <main id="top">
+      <section class="hero section">
+        <div class="hero-copy reveal">
+          <p class="eyebrow">Software Engineer</p>
+          <h1>Chandu</h1>
+          <p class="hero-role">Software Engineer</p>
+          <p class="hero-text">I build polished mobile apps, Flask REST APIs, and product interfaces that feel clean, useful, and ready to use.</p>
+          <div class="hero-actions">
+            <a class="button primary" href="#projects">View projects</a>
+            <a class="button secondary" href="Valligatla_Chandu_Resume.pdf" target="_blank" rel="noreferrer">Resume</a>
+            <a class="button secondary" href="#contact">Start a conversation</a>
+          </div>
+        </div>
+        <div class="hero-showcase reveal" aria-label="Flagship project preview">
+          <div class="showcase-meta">
+            <span>Flagship</span>
+            <strong>Ethereal Weather</strong>
+          </div>
+          <div class="device-strip">
+            <img src="assets/weather-current.png" alt="Ethereal Weather current conditions screen">
+            <img src="assets/weather-radar.png" alt="Ethereal Weather radar screen">
+            <img src="assets/weather-locations.png" alt="Ethereal Weather saved locations screen">
+          </div>
+        </div>
+      </section>
+
+      <section class="section signal-band" aria-label="Professional signal">
+        <div class="signal reveal">
+          <span>Flutter app development</span>
+          <span>Flask REST APIs</span>
+          <span>Design-aware engineering</span>
+          <span>Authentication and user flows</span>
+        </div>
+      </section>
+
+      <section class="section projects" id="projects">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Selected work</p>
+          <h2>Projects with a clear problem, a real interface, and engineering decisions behind them.</h2>
+        </div>
+
+        <article class="featured-project reveal">
+          <div class="project-visual">
+            <img src="assets/weather-current.png" alt="Current weather screen from Ethereal Weather">
+            <img src="assets/weather-forecast.png" alt="Forecast screen from Ethereal Weather">
+          </div>
+          <div class="project-copy">
+            <p class="eyebrow">Flutter + weather APIs + product UI</p>
+            <h3>Ethereal Weather</h3>
+            <p>A high-contrast weather app designed like an editorial product: current conditions, forecast projection, radar-style visualization, saved cities, and current-location support.</p>
+            <dl class="project-facts">
+              <div><dt>Problem</dt><dd>Most weather apps feel crowded and generic.</dd></div>
+              <div><dt>Solution</dt><dd>A focused weather interface that prioritizes hierarchy, clarity, and fast scanning.</dd></div>
+              <div><dt>Challenge</dt><dd>Balancing live API states, saved locations, theme logic, and responsive Flutter screens.</dd></div>
+            </dl>
+            <div class="tags" aria-label="Technology stack">
+              <span>Flutter</span><span>Dart</span><span>REST APIs</span><span>State management</span><span>Responsive UI</span>
+            </div>
+            <div class="project-links">
+              <button class="text-button" type="button" id="caseStudyOpen">Open case study</button>
+              <a href="#contact">Request demo</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="featured-project reveal">
+          <div class="fitness-visual" aria-label="Virtual Fitness System preview">
+            <div class="fitness-screen">
+              <span class="screen-label">Virtual Fitness</span>
+              <strong>BMI + Goal Planner</strong>
+              <div class="fitness-stat">
+                <span>BMI</span>
+                <b>22.4</b>
+                <small>Normal</small>
+              </div>
+              <div class="fitness-row">
+                <span>Goal</span>
+                <strong>Cutting</strong>
+              </div>
+              <div class="fitness-row">
+                <span>Workout</span>
+                <strong>Daily Quest</strong>
+              </div>
+              <div class="fitness-progress"><i style="width: 72%"></i></div>
+            </div>
+            <div class="fitness-api-card">
+              <span>Flask API</span>
+              <code>/login</code>
+              <code>/profile/update</code>
+              <code>/dashboard</code>
+              <code>/daily-workout/progress</code>
+            </div>
+          </div>
+          <div class="project-copy">
+            <p class="eyebrow">Flutter APK + Flask + REST API</p>
+            <h3>Virtual Fitness System</h3>
+            <p>A fitness app turned into an APK with authentication, BMI-based body type feedback, workout recommendations, diet and calorie guidance, and daily progress tracking.</p>
+            <dl class="project-facts">
+              <div><dt>Problem</dt><dd>Fitness apps often give generic plans without connecting them to a user's body data or goal.</dd></div>
+              <div><dt>Solution</dt><dd>A mobile-first app that uses BMI, selected body goal, and backend profile data to recommend clearer fitness actions.</dd></div>
+              <div><dt>Challenge</dt><dd>Connecting Flutter screens to Flask REST APIs for auth, profile storage, dashboard data, daily workout progress, and APK builds.</dd></div>
+            </dl>
+            <div class="tags" aria-label="Technology stack">
+              <span>Flutter</span><span>Dart</span><span>Python</span><span>Flask</span><span>SQLite</span><span>REST API</span><span>APK</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/chandu1165/fitness_flutter" target="_blank" rel="noreferrer">GitHub repo</a>
+              <a href="https://github.com/chandu1165/fitness_flutter#readme" target="_blank" rel="noreferrer">Read README</a>
+            </div>
+          </div>
+        </article>
+
+        <div class="project-grid">
+          <article class="project-card reveal">
+            <span class="project-index">03</span>
+            <h3>API-backed App Flows</h3>
+            <p>Backend-connected project work using Python, Flask, REST APIs, authentication logic, and mobile-first screens that respond to real user data.</p>
+            <div class="tags"><span>Python</span><span>Flask</span><span>REST</span><span>Mobile UX</span></div>
+          </article>
+          <article class="project-card reveal">
+            <span class="project-index">04</span>
+            <h3>Portfolio System</h3>
+            <p>This site: a curated developer identity with project storytelling, fast navigation, and responsive polish.</p>
+            <div class="tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section process" id="process">
+        <div class="section-heading reveal">
+          <p class="eyebrow">How I work</p>
+          <h2>I show the decisions behind the result.</h2>
+        </div>
+        <div class="process-grid">
+          <div class="process-item reveal">
+            <span>01</span>
+            <h3>Frame the user problem</h3>
+            <p>Define the job the product should do before choosing UI patterns or technical architecture.</p>
+          </div>
+          <div class="process-item reveal">
+            <span>02</span>
+            <h3>Prototype the experience</h3>
+            <p>Use fast iterations to test hierarchy, flow, and the emotional tone of the interface.</p>
+          </div>
+          <div class="process-item reveal">
+            <span>03</span>
+            <h3>Engineer for real use</h3>
+            <p>Handle loading, empty, error, and mobile states so the product survives outside a screenshot.</p>
+          </div>
+          <div class="process-item reveal">
+            <span>04</span>
+            <h3>Document the tradeoffs</h3>
+            <p>Explain architecture choices, bugs solved, performance work, and what changed after testing.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section metrics">
+        <div class="metric reveal">
+          <strong>2</strong>
+          <span>real app projects</span>
+        </div>
+        <div class="metric reveal">
+          <strong>6</strong>
+          <span>programming languages</span>
+        </div>
+        <div class="metric reveal">
+          <strong>API</strong>
+          <span>Flask and REST backend work</span>
+        </div>
+      </section>
+
+      <section class="section skills" id="skills">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Toolkit</p>
+          <h2>Focused on mobile apps, Flask APIs, and interfaces that communicate clearly.</h2>
+        </div>
+        <div class="skill-columns">
+          <div class="skill-column reveal">
+            <h3>Build</h3>
+            <ul>
+              <li>Flutter and Dart apps</li>
+              <li>Python Flask backends</li>
+              <li>Responsive web interfaces</li>
+              <li>REST API integration</li>
+              <li>User authentication flows</li>
+            </ul>
+          </div>
+          <div class="skill-column reveal">
+            <h3>Languages</h3>
+            <ul>
+              <li>C and C++</li>
+              <li>Python and Java</li>
+              <li>Dart and Flutter</li>
+              <li>HTML, CSS, and JavaScript</li>
+            </ul>
+          </div>
+          <div class="skill-column reveal">
+            <h3>Product</h3>
+            <ul>
+              <li>Problem framing and UI planning</li>
+              <li>Debugging and iteration</li>
+              <li>BMI and recommendation logic</li>
+              <li>Project documentation and demos</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="section credentials" id="credentials">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Credentials</p>
+          <h2>Education, certification, and practice that support the projects.</h2>
+        </div>
+        <div class="credential-grid">
+          <article class="credential-item reveal">
+            <span>Education</span>
+            <h3>VIT Amaravati</h3>
+            <p>B.Tech in Computer Science and Engineering, 2023 - 2027. Current CGPA: 7.35 / 10.</p>
+          </article>
+          <article class="credential-item reveal">
+            <span>Certification</span>
+            <h3>Azure Fundamentals</h3>
+            <p>Microsoft Certified: Azure Fundamentals (AZ-900), plus C Programming and Java Programming certifications.</p>
+          </article>
+          <article class="credential-item reveal">
+            <span>Practice</span>
+            <h3>DSA + Problem Solving</h3>
+            <p>Regular coding practice on LeetCode and LitCoder, with focus on logic, DSA, OOP, and DBMS fundamentals.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section about" id="about">
+        <div class="about-copy reveal">
+          <p class="eyebrow">About</p>
+          <h2>I'm building toward becoming the kind of engineer who can own the whole product feel.</h2>
+          <p>I care about apps that are useful, calm, and memorable. My work combines mobile engineering, Flask-backed APIs, authentication flows, and visual systems that make complex information feel simple.</p>
+        </div>
+        <div class="about-panel reveal">
+          <span>Current direction</span>
+          <strong>Mobile apps, Flask APIs, and polished product interfaces</strong>
+          <p>Next focus: deepen Ethereal Weather and Virtual Fitness with richer documentation, live deployment, stronger backend structure, and measurable performance notes.</p>
+        </div>
+      </section>
+
+      <section class="section contact" id="contact">
+        <div class="contact-copy reveal">
+          <p class="eyebrow">Contact</p>
+          <h2>Let's build something that feels real enough to ship.</h2>
+          <p class="contact-note">Email: valligtlachandu@gmail.com | Phone: 9390340329</p>
+        </div>
+        <div class="contact-actions reveal">
+          <a class="button primary" href="mailto:valligtlachandu@gmail.com">Email Chandu</a>
+          <a class="button secondary" href="Valligatla_Chandu_Resume.pdf" target="_blank" rel="noreferrer">Resume</a>
+          <a class="button secondary" href="tel:+919390340329">Call</a>
+          <a class="button secondary" href="https://github.com/chandu1165" target="_blank" rel="noreferrer">GitHub</a>
+          <a class="button secondary" href="https://linkedin.com/in/chandu-valligatla" target="_blank" rel="noreferrer">LinkedIn</a>
+        </div>
+      </section>
+    </main>
+
+    <div class="command-palette" id="commandPalette" aria-hidden="true">
+      <div class="command-panel" role="dialog" aria-modal="true" aria-label="Command palette">
+        <input id="commandInput" type="search" placeholder="Jump to projects, process, skills, credentials, contact..." autocomplete="off">
+        <div class="command-list">
+          <button type="button" data-target="#projects">Projects</button>
+          <button type="button" data-target="#process">Process</button>
+          <button type="button" data-target="#skills">Skills</button>
+          <button type="button" data-target="#credentials">Credentials</button>
+          <button type="button" data-target="#contact">Contact</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="case-study" id="caseStudy" aria-hidden="true">
+      <div class="case-study-panel" role="dialog" aria-modal="true" aria-labelledby="caseStudyTitle">
+        <button class="case-close" id="caseStudyClose" type="button" aria-label="Close case study">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18 6 6 18M6 6l12 12"/></svg>
+        </button>
+        <div class="case-hero">
+          <p class="eyebrow">Flagship case study</p>
+          <h2 id="caseStudyTitle">Ethereal Weather proves product thinking, not just UI taste.</h2>
+          <p>A recruiter should quickly see the full loop: problem framing, API integration, design system, edge states, and the next engineering steps.</p>
+        </div>
+        <div class="case-grid">
+          <section>
+            <span>01</span>
+            <h3>Problem</h3>
+            <p>Weather apps often overload people with widgets. The goal was to make forecasts feel calm, editorial, and immediately scannable.</p>
+          </section>
+          <section>
+            <span>02</span>
+            <h3>Architecture</h3>
+            <p>Flutter screens are split by product task: current view, projection, radar visualization, and saved locations, backed by service and provider layers.</p>
+          </section>
+          <section>
+            <span>03</span>
+            <h3>Challenges</h3>
+            <p>Handling live API data, geolocation, saved cities, loading states, theme behavior, and responsive composition without making the UI feel busy.</p>
+          </section>
+          <section>
+            <span>04</span>
+            <h3>Next Upgrade</h3>
+            <p>Add an AI weather assistant that explains conditions, travel risk, outfit suggestions, and activity planning in plain language.</p>
+          </section>
+        </div>
+        <div class="case-proof">
+          <div><strong>4</strong><span>product screens</span></div>
+          <div><strong>2</strong><span>theme modes</span></div>
+          <div><strong>API</strong><span>real data flow</span></div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
