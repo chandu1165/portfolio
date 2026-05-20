@@ -21,8 +21,8 @@
 
 :root.dark {
   color-scheme: dark;
-  --bg: #07110f;
-  --bg-soft: #0e211d;
+  --bg: #050b0d;
+  --bg-soft: #0b1c1b;
   --ink: #f1f7f2;
   --muted: #a9bab3;
   --line: rgb(241 247 242 / 0.16);
@@ -50,10 +50,10 @@ body {
   margin: 0;
   background-color: var(--bg);
   background-image:
-    linear-gradient(118deg, color-mix(in srgb, var(--sky) 18%, transparent) 0%, transparent 28%),
-    linear-gradient(246deg, color-mix(in srgb, var(--accent-2) 22%, transparent) 0%, transparent 36%),
-    linear-gradient(164deg, transparent 0%, color-mix(in srgb, var(--violet) 9%, transparent) 52%, transparent 82%),
-    linear-gradient(180deg, var(--bg-soft) 0%, var(--bg) 42%, color-mix(in srgb, var(--accent-2) 10%, var(--bg)) 100%);
+    linear-gradient(126deg, color-mix(in srgb, var(--sky) 16%, transparent) 0%, transparent 24%),
+    linear-gradient(236deg, color-mix(in srgb, var(--accent-2) 24%, transparent) 0%, transparent 34%),
+    linear-gradient(154deg, transparent 0%, color-mix(in srgb, var(--violet) 12%, transparent) 48%, transparent 76%),
+    linear-gradient(180deg, #0d2524 0%, var(--bg) 42%, #0b151d 100%);
   background-attachment: fixed;
   color: var(--ink);
   font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
@@ -72,29 +72,33 @@ body::after {
 
 body::before {
   background-image:
-    linear-gradient(rgb(17 32 31 / 0.028) 1px, transparent 1px),
-    linear-gradient(90deg, rgb(17 32 31 / 0.028) 1px, transparent 1px),
-    repeating-linear-gradient(118deg, transparent 0 78px, color-mix(in srgb, var(--accent-2) 8%, transparent) 79px 80px, transparent 81px 160px),
-    repeating-linear-gradient(24deg, transparent 0 112px, color-mix(in srgb, var(--accent) 5%, transparent) 113px 114px, transparent 115px 224px);
-  background-size: 72px 72px, 72px 72px, 100% 100%, 100% 100%;
-  mask-image: linear-gradient(180deg, black 0%, black 72%, transparent 100%);
+    linear-gradient(rgb(17 32 31 / 0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgb(17 32 31 / 0.03) 1px, transparent 1px),
+    repeating-linear-gradient(116deg, transparent 0 76px, color-mix(in srgb, var(--accent-2) 10%, transparent) 77px 78px, transparent 79px 152px),
+    repeating-linear-gradient(29deg, transparent 0 122px, color-mix(in srgb, var(--accent) 6%, transparent) 123px 124px, transparent 125px 244px),
+    repeating-linear-gradient(151deg, transparent 0 188px, color-mix(in srgb, var(--sky) 7%, transparent) 189px 190px, transparent 191px 376px);
+  background-size: 72px 72px, 72px 72px, 100% 100%, 100% 100%, 100% 100%;
+  mask-image: linear-gradient(180deg, black 0%, black 78%, transparent 100%);
 }
 
 body::after {
   z-index: -1;
   background:
-    linear-gradient(180deg, color-mix(in srgb, var(--panel-strong) 30%, transparent) 0%, transparent 22%),
-    linear-gradient(90deg, transparent 0%, color-mix(in srgb, var(--accent-2) 16%, transparent) 34%, color-mix(in srgb, var(--sky) 8%, transparent) 52%, color-mix(in srgb, var(--violet) 10%, transparent) 70%, transparent 100%),
-    linear-gradient(0deg, color-mix(in srgb, var(--accent-2) 8%, transparent) 0%, transparent 38%);
-  opacity: 0.9;
+    linear-gradient(104deg, transparent 0 15%, color-mix(in srgb, var(--accent-2) 18%, transparent) 16% 22%, transparent 23% 100%),
+    linear-gradient(143deg, transparent 0 34%, color-mix(in srgb, var(--sky) 14%, transparent) 35% 39%, transparent 40% 100%),
+    linear-gradient(31deg, transparent 0 58%, color-mix(in srgb, var(--accent) 10%, transparent) 59% 62%, transparent 63% 100%),
+    linear-gradient(180deg, color-mix(in srgb, var(--panel-strong) 24%, transparent) 0%, transparent 24%),
+    linear-gradient(0deg, color-mix(in srgb, var(--accent-2) 9%, transparent) 0%, transparent 42%);
+  opacity: 0.92;
 }
 
 :root.dark body::before {
   background-image:
-    linear-gradient(rgb(241 247 242 / 0.032) 1px, transparent 1px),
-    linear-gradient(90deg, rgb(241 247 242 / 0.032) 1px, transparent 1px),
-    repeating-linear-gradient(118deg, transparent 0 78px, color-mix(in srgb, var(--accent-2) 8%, transparent) 79px 80px, transparent 81px 160px),
-    repeating-linear-gradient(24deg, transparent 0 112px, color-mix(in srgb, var(--accent) 5%, transparent) 113px 114px, transparent 115px 224px);
+    linear-gradient(rgb(241 247 242 / 0.035) 1px, transparent 1px),
+    linear-gradient(90deg, rgb(241 247 242 / 0.035) 1px, transparent 1px),
+    repeating-linear-gradient(116deg, transparent 0 76px, color-mix(in srgb, var(--accent-2) 11%, transparent) 77px 78px, transparent 79px 152px),
+    repeating-linear-gradient(29deg, transparent 0 122px, color-mix(in srgb, var(--accent) 6%, transparent) 123px 124px, transparent 125px 244px),
+    repeating-linear-gradient(151deg, transparent 0 188px, color-mix(in srgb, var(--sky) 7%, transparent) 189px 190px, transparent 191px 376px);
 }
 
 body.palette-open {
